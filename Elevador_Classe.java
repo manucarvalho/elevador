@@ -71,7 +71,13 @@ public class Elevador_Classe {
 		return esforco;
 	}
 
-	
+	public String toString() {
+		return idElevador +
+				" " +
+				ligado +
+				" " +
+				prioridade;
+	}
 	
 	
 }
