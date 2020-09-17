@@ -15,16 +15,10 @@ public class Elevador_Classe {
 		this.idElevador = idElevador;
 		this.ligado = false;
 		this.prioridade = false;
-		this.andarAtual = 0;
+		this.andarAtual = 1;
 	}
 	
-	public Elevador_Classe(int idElevador, boolean ligado, boolean prioridade, int andarAtual) {
-		this.idElevador = idElevador;
-		this.ligado = ligado;
-		this.prioridade = prioridade;
-		this.andarAtual = andarAtual;
-	}
-
+	
 	public int getIdElevador() {
 		return idElevador;
 	}

@@ -132,13 +132,11 @@ public class Elevador_app {
 	public static void solicitarElevador() {
 		System.out.println("Solicitar elevador");
 		System.out.print("Em qual andar você se encontra: ");
-		int andarAtual = ler.nextInt();
-		elevador1.setAndarAtual(andarAtual);
-		elevador2.setAndarAtual(andarAtual);
+		int andarAtualUsuario = ler.nextInt();
 		System.out.print("Qual o andar de destino: ");
 		int andarDestino = ler.nextInt();
-		float esforcoElevador1 = elevador1.calcularEsforco(andarDestino);
-		float esforcoElevador2 = elevador2.calcularEsforco(andarDestino);
+		float esforcoElevador1 = elevador1.calcularEsforco(andarAtualUsuario);
+		float esforcoElevador2 = elevador2.calcularEsforco(andarAtualUsuario);
 		int elevadorMenorEsforco = 0;
 		if (esforcoElevador1 < esforcoElevador2) {
 			elevadorMenorEsforco = elevador1.getIdElevador();
